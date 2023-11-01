@@ -1,0 +1,30 @@
+#about {
+  background: url(../../assets/img/Antananarivo.jpg) center/cover;
+  height: 100vh;
+  margin-top: -75px;
+  bottom: 0;
+}
+
+.container {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.518);
+  margin: 150px 70px;
+  padding: 30px;
+  border-radius: 40px;
+  font-size: 1.4rem;
+}
+
+.container h1 {
+  font: normal bold 6rem/1.2 sans-serif;
+  color: blue;
+}
+
+.media-icon a {
+  font-size: 2rem;
+  margin: auto 20px;
+  color: rgb(0, 0, 0);
+}
+
+.btn {
+  margin: 50px 20px auto 20px;
+}

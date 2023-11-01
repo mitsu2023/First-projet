@@ -1,0 +1,44 @@
+<div
+  style="
+    background: url(../../assets/img/Anosy.jpg) center/cover;
+    height: 100vh;
+    margin-top: -75px;
+  "
+>
+  <div *ngIf="bus">
+    <p class="text-center" style="padding-top: 75px">
+      <span
+        style="font: normal bold 4rem/1.2 sans-serif; color: rgb(255, 255, 0)"
+        >LIGNE {{ bus.ligne }}</span
+      ><i></i>
+    </p>
+    <div
+      class="card"
+      style="position: static; background: #ffffff63; margin: auto 35%"
+    >
+      <img
+        class="card-img-top text-center"
+        [src]="bus.picture"
+        alt="img representatif"
+        style="width: 150px; margin: 20px 35%; border-radius: 50px"
+      />
+      <div class="card-body text-center" style="color: black">
+        <div>
+          <label>Depart: </label>
+          <i style="font-size: 2rem"> {{ bus.depart }}</i>
+        </div>
+        <div>
+          <label>Destination: </label>
+          <i style="font-size: 2rem"> {{ bus.destination }}</i>
+        </div>
+        <button routerLink="/busListe" class="btn btn-primary">Retour</button>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!bus" class="text-center">
+    <p style="font-size: 3rem" class="text-center">Cette ligne n'existe pas</p>
+    <button routerLink="/busListe" class="btn btn-primary text-center">
+      Retour a l'acceuil
+    </button>
+  </div>
+</div>

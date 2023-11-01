@@ -1,0 +1,39 @@
+<div
+  id="Liste"
+  style="
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -75px;
+    background: url(../assets/img/Anosy.jpg) center/cover;
+    min-height: 100vh;
+  "
+>
+  <div class="container text-center">
+    <div class="row" style="padding-top: 70px">
+      <div *ngFor="let bus of busList" class="col-sm-6 col-md-4">
+        <div
+          (click)="goToDBUS(bus)"
+          class="card"
+          style="
+            position: static;
+            background: #ffffff63;
+            margin: 50px 20px;
+            padding: 20px;
+          "
+        >
+          <img
+            class="card-img-top"
+            [src]="bus.picture"
+            alt="img representatif"
+            style="width: 50%; margin: 10px 30%; border-radius: 50px"
+          />
+          <div class="card-body" style="color: blue">
+            <h1>{{ bus.ligne }}</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

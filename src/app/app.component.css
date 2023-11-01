@@ -1,0 +1,107 @@
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+#Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(../assets/img/Antananarivo-1.jpg) center/cover;
+  height: 100vh;
+}
+
+.research {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 50px auto;
+  padding: 20px;
+  width: 60%;
+  border-radius: 20px;
+  color: #000;
+}
+
+.btn {
+  margin: auto 10px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.5);
+  color: rgb(0, 102, 255);
+  border: 2px solid rgb(0, 102, 255);
+}
+
+.btn:hover {
+  background: rgb(0, 102, 255);
+  color: white;
+}
+
+@media (max-width: 1039px) {
+  .research {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+  }
+
+  .btn {
+    margin: auto 20%;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 102, 255);
+    border: 2px solid rgb(0, 102, 255);
+  }
+
+  .btn:hover {
+    background: rgb(0, 102, 255);
+    color: white;
+  }
+}
+
+/* .container .card .card-stacked .card-content {
+  margin: 10px 20px;
+} */
+
+.grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  padding: 200px;
+}
+
+.grid-container {
+  background: #ffffff63;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin: auto 600px;
+  padding: 0;
+  border-radius: 20px;
+}
+
+/* .result {
+  margin: 10px;
+} */
+
+.grid-container img {
+  padding: 20px;
+  width: 150%;
+  margin: 10px;
+  border-radius: 50px;
+}
+
+.grid-container p {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: auto;
+  font: normal bold 4rem/2 sans-serif;
+  color: whitesmoke;
+}
+
+@media (max-width: 1039px) {
+  .grid-container p {
+    margin: auto 120px;
+  }
+}
